@@ -16,11 +16,13 @@ html {
     &:not([data-mode]),
     &[data-mode='light'] {
         --sidebar-bg: #{$tsukiyoPaleBlue};
+        --sidebar-hover-bg: rgb(10, 10, 10, 0.15);
     }
   }
   @media (prefers-color-scheme: dark) {
     &[data-mode='light'] {
         --sidebar-bg: #{$tsukiyoPaleBlue};
+        --sidebar-hover-bg: rgb(10, 10, 10, 0.15);
     }
   }
 }
