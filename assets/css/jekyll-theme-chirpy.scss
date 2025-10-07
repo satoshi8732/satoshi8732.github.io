@@ -9,3 +9,18 @@
 ';
 
 /* append your custom style below */
+$tsukiyoPaleBlue: #D4E6FF;
+
+html {
+  @media (prefers-color-scheme: light) {
+    &:not([data-mode]),
+    &[data-mode='light'] {
+        --sidebar-bg: #{$tsukiyoPaleBlue};
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    &[data-mode='light'] {
+        --sidebar-bg: #{$tsukiyoPaleBlue};
+    }
+  }
+}
