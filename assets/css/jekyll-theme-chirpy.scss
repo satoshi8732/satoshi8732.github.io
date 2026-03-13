@@ -1,6 +1,5 @@
 ---
 ---
-
 /* prettier-ignore */
 @use 'main
 {%- if jekyll.environment == 'production' -%}
@@ -25,4 +24,8 @@ html {
         --sidebar-hover-bg: rgb(10, 10, 10, 0.15);
     }
   }
+}
+
+body {
+  font-family: "Arial", "Roboto", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", "Yu Gothic", sans-serif !important;
 }
